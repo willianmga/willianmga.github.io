@@ -1,7 +1,1 @@
-.idea/
-.idea/workspace.xml
-**/.idea/workspace.xml
-
-.project
-*.iml
-
+node_modules
