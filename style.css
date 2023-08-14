@@ -1,5 +1,4 @@
 :root {
-    /* --background-color: #151417; */
     --background-color: #000000;
     --color-primary: #4477CE;
     --color-text: #FFFFFF;
@@ -138,11 +137,8 @@ main {
 }
 
 .card-content {
-    /* display: flex;
-    justify-content: space-around; */
     align-items: center;
     padding: 10px;
-    
     display: inline-block;
     width: 50%;
 }
@@ -159,10 +155,5 @@ main {
     text-transform: lowercase;
     background-color: red;
     color: var(--color-text);
-
     width: 40%;
-}
-
-.card-button a {
-    /* color: #000000; */
 }

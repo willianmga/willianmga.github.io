@@ -23,27 +23,30 @@ function showContent() {
 
 function renderAbout() {
     return `
-<h1 class="text-title text-title-h1">About me</h1>
-<div class="content">
-    <div class="about-photo">
-        <img src="img/new logo.jpg">
-    </div>
-    <div class="about-text text-no-focus">
-        <p>Hello, I'm <span class="text-focus">Willian Azevedo</span>, a passionate <span class="text-focus">Software Engineer</span> based in <span class="text-focus">London, UK</span>,
-        with large experience building, maintaining and troubleshooting scalable and reliable services 
-        using <span class="text-focus">Java, TypeScript, Node.js, MongoDB, Kubernetes</span> and <span class="text-focus">Terraform</span> on <span class="text-focus">Google Cloud</span>.<p></br>
-        My list of <span class="text-focus">certifications</span> include:
-            <ul>
-                <li>Certified <span class="text-focus">Java Programmer</span> by Oracle (OCAJP 8)</li>
-                <li>Certified <span class="text-focus">Kubernetes Administrator</span> (CKA)</li>
-                <li>Certified <span class="text-focus">Kubernetes Application Developer</span> (CKAD)</li>
-                <li><span class="text-focus">Google Cloud</span> Certified Professional <span class="text-focus">Cloud Security Engineer</span> (CSE)</li>
-                <li><span class="text-focus">Bachelors</span> in Software Engineering</li>
-            </ul>
-            <p>Passionate about software design, security, clean code, test automation, infrastructure provisioning and application monitoring.            
-        </p>
-    </div>
-</div>`
+        <div>
+            <h1 class="text-title text-title-h1">About me</h1>
+            <div class="content">
+                <div class="about-photo">
+                    <img src="img/profile.jpg"/>
+                </div>
+                <div class="about-text text-no-focus">
+                    <p>Hello, I'm <span class="text-focus">Willian Azevedo</span>, a passionate <span class="text-focus">Software Engineer</span> based in <span class="text-focus">London, UK</span>,
+                    with large experience building, maintaining and troubleshooting scalable and reliable services 
+                    using <span class="text-focus">Java, TypeScript, Node.js, MongoDB, Kubernetes</span> and <span class="text-focus">Terraform</span> on <span class="text-focus">Google Cloud</span>.<br/>
+                    My list of <span class="text-focus">certifications</span> include:
+                        <ul>
+                            <li>Certified <span class="text-focus">Java Programmer</span> by Oracle (OCAJP 8)</li>
+                            <li>Certified <span class="text-focus">Kubernetes Administrator</span> (CKA)</li>
+                            <li>Certified <span class="text-focus">Kubernetes Application Developer</span> (CKAD)</li>
+                            <li><span class="text-focus">Google Cloud</span> Certified Professional <span class="text-focus">Cloud Security Engineer</span> (CSE)</li>
+                            <li><span class="text-focus">Bachelors</span> in Software Engineering</li>
+                        </ul>
+                        Passionate about software design, security, clean code, test automation, infrastructure provisioning and application monitoring.            
+                    </p>
+                </div>
+            </div> 
+        </div>
+    `;
 }
 
 function renderProjects() {
@@ -125,11 +128,13 @@ function renderProjects() {
         <div class="project-content">
             ${projects}
         </div>  
-    `
+    `;
 }
 
 function renderContent() {
     return `
-    <h1 class="text-title">Contents</h1> 
-    `
+        <div>
+            <h1 class="text-title">Contents</h1> 
+        </div>
+    `;
 }
