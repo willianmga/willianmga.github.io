@@ -30,7 +30,7 @@ function renderAbout() {
                     <img src="img/profile.jpg"/>
                 </div>
                 <div class="about-text text-no-focus">
-                    <p>Hello, I'm <span class="text-focus">Willian Azevedo</span>, a passionate <span class="text-focus">Software Engineer</span> based in <span class="text-focus">London, UK</span>,
+                    <p>Hello, I'm <span class="text-focus">Willian Azevedo Bodnariuc</span>, a passionate <span class="text-focus">Software Engineer</span> based in <span class="text-focus">London, UK</span>,
                     with large experience building, maintaining and troubleshooting scalable and reliable services 
                     using <span class="text-focus">Java, TypeScript, Node.js, MongoDB, Kubernetes</span> and <span class="text-focus">Terraform</span> on <span class="text-focus">Google Cloud</span>.<br/>
                     My list of <span class="text-focus">certifications</span> include:
