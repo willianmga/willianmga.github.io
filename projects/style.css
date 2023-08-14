@@ -1,0 +1,55 @@
+.project-content {
+    max-width: var(--width-max);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card {
+    max-width: 290px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: var(--color-text);
+    color: var(--background-color);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        max-width: 90vw;
+    }
+}
+
+.card-title {
+    padding: 10px;
+    text-align: center;
+}
+
+.card-content {
+    align-items: center;
+    padding: 10px;
+    display: inline-block;
+    width: 50%;
+}
+
+.card img {
+    width: 290px;
+    height: 210px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+    .card img {
+        width: 90vw;
+        height: 20vh;
+    }
+}
+
+.card-button {
+    font-weight: bold;
+    border: 1px solid grey;
+    text-transform: lowercase;
+    background-color: red;
+    color: var(--color-text);
+    width: 40%;
+}
