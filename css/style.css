@@ -116,6 +116,11 @@ header a:hover {
     display: block;
 }
 
+.about-links-img {
+    width: 24px;
+    margin-left: 10px;
+}
+
 .about-text {
     padding: 10px;
 }

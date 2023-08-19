@@ -8,6 +8,36 @@ function showPage() {
 }
 
 function renderAbout() {
+
+    const links = [
+        {
+            name: "LinkedIn",
+            link: "https://www.linkedin.com/in/willian-azevedo/",
+            img: "img/links/linkedin.png"
+        },
+        {
+            name: "GitHub",
+            link: "https://github.com/willianmga",
+            img: "img/links/github.png"
+        },
+        {
+            name: "YouTube",
+            link: "https://www.youtube.com/@devlondres",
+            img: "img/links/youtube.svg"
+        },
+        {
+            name: "Instagram",
+            link: "https://www.instagram.com/devlondres",
+            img: "img/links/instagram.png"
+        }
+    ].map(link => {
+        return `
+            <a href="${link.link}" target="_blank">
+                <img class="about-links-img" src="${link.img}" alt="${link.name}">
+            </a>
+        `;
+    }).concat();    
+
     const content = `
     <div>
         <section class="section-intro">
@@ -23,6 +53,9 @@ function renderAbout() {
                         companies all over <strong>America</strong>, <strong>UK</strong> and <strong>Brazil</strong>.</p>
                         <p>Skills: <strong>APIs</strong>, Kong and Apigee, <strong>Java</strong> and <strong>TypeScript</strong>, Redis, <strong>MongoDB</strong>, Linux, <strong>Kubernetes</strong>, CI/CD (Github, Jenkins, ArgoCD) </p>
                     </div>                
+                </div>
+                <div>
+                    ${links}
                 </div>
             </div> 
         </section>
