@@ -1,52 +1,78 @@
 function showPage() {
     const uri = window.location.hash;
     if (uri.endsWith("#projects")) {
-        showProjects();
-    } else if (uri.endsWith("#content")) {
-        showContent();
+        renderProjects();
     } else {
-        showAbout();
+        renderAbout();
     }
 }
 
-function showAbout() {
-    document.getElementById("content").innerHTML = renderAbout();
-}
-
-function showProjects() {
-    document.getElementById("content").innerHTML = renderProjects();
-}
-
-function showContent() {
-    document.getElementById("content").innerHTML = renderContent();
-}
-
 function renderAbout() {
-    return `
-        <div>
-            <h1 class="text-title text-title-h1">About me</h1>
-            <div class="content">
-                <div class="about-photo">
-                    <img src="img/profile.jpg"/>
-                </div>
-                <div class="about-text text-no-focus">
-                    <p>Hello, I'm <span class="text-focus">Willian Azevedo Bodnariuc</span>, a passionate <span class="text-focus">Software Engineer</span> based in <span class="text-focus">London, UK</span>,
-                    with large experience building, maintaining and troubleshooting scalable and reliable services 
-                    using <span class="text-focus">Java, TypeScript, Node.js, MongoDB, Kubernetes</span> and <span class="text-focus">Terraform</span> on <span class="text-focus">Google Cloud</span>.<br/>
-                    My list of <span class="text-focus">certifications</span> include:
-                        <ul>
-                            <li>Certified <span class="text-focus">Java Programmer</span> by Oracle (OCAJP 8)</li>
-                            <li>Certified <span class="text-focus">Kubernetes Administrator</span> (CKA)</li>
-                            <li>Certified <span class="text-focus">Kubernetes Application Developer</span> (CKAD)</li>
-                            <li><span class="text-focus">Google Cloud</span> Certified Professional <span class="text-focus">Cloud Security Engineer</span> (CSE)</li>
-                            <li><span class="text-focus">Bachelors</span> in Software Engineering</li>
-                        </ul>
-                        Passionate about software design, security, clean code, test automation, infrastructure provisioning and application monitoring.            
-                    </p>
+    const content = `
+    <div>
+        <section class="section-intro">
+            <div class="container">
+                <div class="content">                 
+                    <div class="about-photo">
+                        <img src="img/profile.jpg"/>
+                    </div>
+                    <div class="about-text text-no-focus">
+                        <h1 class="text-title text-title-h1">I'm Willian,</h1>
+                        <p>A <strong>Senior Software Engineer</strong> with <strong>DevOps</strong> skills based in <strong>London, UK</strong>.</p>
+                        <p>I'm <strong>experienced</strong> on <strong>all phases</strong> of software development - from <strong>design</strong> to <strong>monitoring</strong> - having built scalable services to
+                        companies all over <strong>America</strong>, <strong>UK</strong> and <strong>Brazil</strong>.</p>
+                        <p>Skills: <strong>APIs</strong>, Kong and Apigee, <strong>Java</strong> and <strong>TypeScript</strong>, Redis, <strong>MongoDB</strong>, Linux, <strong>Kubernetes</strong>, CI/CD (Github, Jenkins, ArgoCD) </p>
+                    </div>                
                 </div>
             </div> 
-        </div>
+        </section>
+        <section class="section-certifications">
+            <div class="container">
+                <h1 class="text-title text-title-h1">Certifications</h1>                    
+                <div class="centralized">
+                    <a href="https://www.credly.com/badges/b2969435-be2c-4588-93e3-9ef576554ba1/public_url" target="_blank">
+                        <img class="section-certifications-img-1" alt="Certified Kubernetes Administrator" src="img/certifications/cka.png"></img>
+                    </a>
+                    <a href="https://www.credly.com/badges/b3a70483-a4a9-4b5e-af26-b9779fea5290/public_url" target="_blank">
+                        <img class="section-certifications-img-1" alt="Certified Kubernetes Application Developer" src="img/certifications/ckad.png"></img>
+                    </a>                    
+                    <a href="https://www.credential.net/cf66c2a4-7b56-48f3-8ac5-a49191196896?key=880d3e748c1d3d46a7ea5c5ce82fadfb4e59dbc3f72ebd9df1662734ebfca344" target="_blank">
+                        <img class="section-certifications-img-2" alt="Google Cloud Certified Cloud Security Enginner" src="img/certifications/gcp-security-engineer.png"></img>
+                    </a>
+                    <a href="https://www.credly.com/badges/b358b3f4-0663-488f-b50e-cc3fe6116472" target="_blank">
+                        <img class="section-certifications-img-2" alt="Oracle Certified Java Programmer 8" src="img/certifications/ocajp-8.png"></img>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section-experience">
+            <div class="container">
+                <h1 class="text-title text-title-h1">Experience</h1>
+                <div class="about-text text-no-focus">
+                    <p><strong class="text-focus">Liferay Cloud</strong> - London, UK</p>
+                    <ul>
+                        <li>(2022 - now) Senior Software Enginner</li>
+                    </ul>
+                    <p><strong class="text-focus">Gamesys</strong> - London, UK</p>
+                    <ul>
+                        <li>(2022 - 2022) Senior Backend Games Developer</li>
+                        <li>(2021 - 2022) Backend Games Developer</li>
+                    </ul>                
+                    <p><strong class="text-focus">Roxor Games</strong> - London, UK</p>
+                    <ul>
+                        <li>(2019 - 2021) Backend Games Developer</li>
+                    </ul>
+                    <p><strong class="text-focus">Spectrum USA (Matera outsourced)</strong> - Brazil</p>
+                    <ul>
+                        <li>(2017 - 2019) Software Developer</li>
+                    </ul>  
+                </div>
+            </div>
+    </section>
+    </div>
     `;
+
+    document.getElementById("content").innerHTML = content;
 }
 
 function renderProjects() {
@@ -114,27 +140,23 @@ function renderProjects() {
                     <a href="${game.infoLink}" target="_blank"><span class="card-button">Info</span></a>
                     <a  href="${game.demolink}" target="_blank"><span class="card-button">Demo</span></a>                                    
                 </div>
-
-            </div>
-            `
+            </div>`
     }).concat();
 
-    return `
+    const content = `
+    <div class="container">
         <h1 class="text-title text-title-h1">Projects</h1>
         <h2 class="text-title text-title-h2">2019-2021 - Gamesys & Roxor Games</h2>
-        <p class="text-no-focus">Between 2019 and 2021 I worked as a <span class="text-focus">backend games developer</span>
-        creating <span class="text-focus">Slot and Casino games</span> played by 
-        <span class="text-focus">thousands of people</span> everyday on the <span class="text-focus">UK's</span> best online casinos</p>
+        <div class="about-text text-no-focus">
+            <p class="text-no-focus">Between 2019 and 2021 I worked as a <strong>backend games developer</strong>
+            creating <strong>Slot and Casino games</strong> played by 
+            <strong>thousands of people</strong> everyday on the <strong>UK's</strong> best online casinos</p>
+        </div>
         <div class="project-content">
             ${projects}
         </div>  
+    </div>
     `;
-}
 
-function renderContent() {
-    return `
-        <div>
-            <h1 class="text-title">Contents</h1> 
-        </div>
-    `;
+    document.getElementById("content").innerHTML = content;
 }
