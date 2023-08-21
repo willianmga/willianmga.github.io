@@ -49,8 +49,8 @@ function renderAbout() {
                     <div class="about-text text-no-focus">
                         <h1 class="text-title text-title-h1">I'm Willian,</h1>
                         <p>A <strong>Senior Software Engineer</strong> with <strong>DevOps</strong> skills based in <strong>London, UK</strong>.</p>
-                        <p>I'm <strong>experienced</strong> on <strong>all phases</strong> of software development - from <strong>design</strong> to <strong>monitoring</strong> - having built scalable services to
-                        companies all over <strong>America</strong>, <strong>UK</strong> and <strong>Brazil</strong>.</p>
+                        <p>I'm <strong>experienced</strong> in <strong>all phases</strong> of software development - from <strong>design</strong> to <strong>monitoring</strong> - having built scalable services for
+                        companies all over <strong>America</strong>, the <strong>UK</strong> and <strong>Brazil</strong>.</p>
                         <p>Skills: <strong>APIs</strong>, Kong and Apigee, <strong>Java</strong> and <strong>TypeScript</strong>, Redis, <strong>MongoDB</strong>, Linux, <strong>Kubernetes</strong>, CI/CD (Github, Jenkins, ArgoCD) </p>
                     </div>                
                 </div>
@@ -70,7 +70,7 @@ function renderAbout() {
                         <img class="section-certifications-img-1" alt="Certified Kubernetes Application Developer" src="img/certifications/ckad.png"></img>
                     </a>                    
                     <a href="https://www.credential.net/cf66c2a4-7b56-48f3-8ac5-a49191196896?key=880d3e748c1d3d46a7ea5c5ce82fadfb4e59dbc3f72ebd9df1662734ebfca344" target="_blank">
-                        <img class="section-certifications-img-2" alt="Google Cloud Certified Cloud Security Enginner" src="img/certifications/gcp-security-engineer.png"></img>
+                        <img class="section-certifications-img-2" alt="Google Cloud Certified Cloud Security Engineer" src="img/certifications/gcp-security-engineer.png"></img>
                     </a>
                     <a href="https://www.credly.com/badges/b358b3f4-0663-488f-b50e-cc3fe6116472" target="_blank">
                         <img class="section-certifications-img-2" alt="Oracle Certified Java Programmer 8" src="img/certifications/ocajp-8.png"></img>
@@ -84,7 +84,7 @@ function renderAbout() {
                 <div class="about-text text-no-focus">
                     <p><strong class="text-focus">Liferay Cloud</strong> - London, UK</p>
                     <ul>
-                        <li>(2022 - now) Senior Software Enginner</li>
+                        <li>(2022 - now) Senior Software Engineer</li>
                     </ul>
                     <p><strong class="text-focus">Gamesys</strong> - London, UK</p>
                     <ul>
@@ -181,9 +181,9 @@ function renderProjects() {
         <h1 class="text-title text-title-h1">Projects</h1>
         <h2 class="text-title text-title-h2">2019-2021 - Gamesys & Roxor Games</h2>
         <div class="about-text text-no-focus">
-            <p class="text-no-focus">Between 2019 and 2021 I worked as a <strong>backend games developer</strong>
+            <p class="text-no-focus">Between 2019 and 2021, I worked as a <strong>backend games developer</strong>
             creating <strong>Slot and Casino games</strong> played by 
-            <strong>thousands of people</strong> everyday on the <strong>UK's</strong> best online casinos</p>
+            <strong>thousands of people</strong> everyday in the <strong>UK's</strong> best online casinos.</p>
         </div>
         <div class="project-content">
             ${projects}
