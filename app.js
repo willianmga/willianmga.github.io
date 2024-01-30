@@ -48,7 +48,7 @@ function renderAbout() {
                     </div>
                     <div class="about-text text-no-focus">
                         <h1 class="text-title text-title-h1">I'm Willian,</h1>
-                        <p>A <strong>Senior Software Engineer</strong> with <strong>DevOps</strong> skills based in <strong>London, UK</strong>.</p>
+                        <p>A <strong>Staff Software Engineer</strong> with <strong>DevOps</strong> skills based in <strong>London, UK</strong>.</p>
                         <p>I'm <strong>experienced</strong> in <strong>all phases</strong> of software development - from <strong>design</strong> to <strong>monitoring</strong> - having built scalable services for
                         companies all over <strong>America</strong>, the <strong>UK</strong> and <strong>Brazil</strong>.</p>
                         <p>Skills: <strong>APIs</strong>, Kong and Apigee, <strong>Java</strong> and <strong>TypeScript</strong>, Redis, <strong>MongoDB</strong>, Linux, <strong>Kubernetes</strong>, CI/CD (Github, Jenkins, ArgoCD) </p>
