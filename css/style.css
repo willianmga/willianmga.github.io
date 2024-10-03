@@ -93,14 +93,16 @@ header a:hover {
 }
 
 .section-certifications-img-1 {
-    width: 20%;
+    width: 19%;
     margin: auto;
-    margin-left: 10px;
+    margin-left: 5px;
+    /*border: 1px solid red;*/
 }
 
 .section-certifications-img-2 {
     width: 18%;
-    margin-left: 10px;
+    margin-left: 5px;
+    /*border: 1px solid black;*/
 }
 
 .section-experience {
