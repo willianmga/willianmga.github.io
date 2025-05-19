@@ -1,56 +1,389 @@
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M85CSB3Z5N"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-M85CSB3Z5N');
-    </script>
-    <title>Willian Bodnariuc - Staff Software Engineer</title>
-    <meta charset="utf-8">
-    <meta name="author" content="Willian Azevedo"/>
-    <meta name="keywords" content="Java, TypeScript, JavaScript, Kubernetes, ArgoCD, Jenkins, MongoDB, Redis, Apigee, Kong, Google Cloud"/>
-    <meta name="description" content="Willian is a Staff Software Engineer based in London, UK and specialized in APIs, Kubernetes and Cloud technologies"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Willian Azevedo - Staff Sofware Engineer"/>
-    <meta property="og:image" content="https://www.bodnariuc.com/img/profile.jpg"/>
-    <meta property="og:image:width" content="600"/>
-    <meta property="og:image:height" content="800"/>
-    <meta property="og:url" content="https://www.bodnariuc.com/"/>
-    <meta property="og:description" content="Willian is a Staff Software Engineer based in London, UK and specialized in APIs, Kubernetes and Cloud technologies"/>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="pages/projects/style.css">
-    <link rel="stylesheet" href="fonts/neuzeit-grotesk/stylesheet.css">
-    <script src="router.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willian Bodnariuc - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://placehold.co/32x32/4477CE/FFFFFF?text=AB&font=inter" type="image/png">
 
-    <script src="pages/home/data.js"></script>
-    <script src="pages/home/intro.js"></script>
-    <script src="pages/home/index.js"></script>
+    <style>
+        /* Your Custom CSS Variables */
+        :root {
+            --background-color: #000000;
+            --background-color-2: #FFFFFF;
+            --color-primary: #4477CE;
+            --color-text: #FFFFFF;
+            --color-text-behind: #61677A;
+            --color-text-focus: #D8D9DA;
+            --width-max: 916px; /* Max width for content container */
+            --padding-horizontal: 20px;
+            --padding-vertical: 40px;
+            --font: 'Inter', sans-serif; /* Using Inter as Neuzeit Grotesk is not standard */
+        }
 
-    <script src="pages/certifications/certifications.js"></script>
-    <script src="pages/certifications/index.js"></script>
+        body {
+            font-family: var(--font);
+            background-color: var(--background-color);
+            color: var(--color-text);
+            margin: 0; /* Removed default margin */
+            padding: 0; /* Removed default padding */
+        }
 
-    <script src="pages/experience/experience.js"></script>
-    <script src="pages/experience/index.js"></script>
+        /* Container for centered content */
+        .content-container {
+            max-width: var(--width-max);
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: var(--padding-horizontal);
+            padding-right: var(--padding-horizontal);
+        }
 
-    <script src="pages/projects/data.js"></script>
-    <script src="pages/projects/projects.js"></script>
-    <script src="pages/projects/index.js"></script>
+        /* Header and Navigation */
+        header {
+            background-color: var(--background-color); /* Ensure header bg matches body */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+        header nav { /* Ensure nav itself is also applying max-width */
+            max-width: var(--width-max);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .nav-link {
+            color: var(--color-text-behind); /* Default link color */
+            font-weight: 500; /* medium */
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.375rem; /* rounded-md */
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--color-primary); /* Primary color on hover/active */
+            background-color: rgba(68, 119, 206, 0.1); /* Slight bg tint for active/hover */
+        }
+
+        /* Section Styling */
+        section {
+            padding-top: var(--padding-vertical);
+            padding-bottom: var(--padding-vertical);
+        }
+        .section-on-dark { /* For sections directly on the dark background */
+            /* No specific background needed, inherits from body */
+        }
+        .section-on-light { /* For sections on the light background (e.g., Certifications) */
+            background-color: var(--background-color-2);
+            color: #333333; /* Darker text for light background */
+        }
+        .section-on-light .section-title,
+        .section-on-light h1, .section-on-light h2, .section-on-light h3 {
+            color: var(--color-primary); /* Primary color for titles on light bg */
+        }
+        .section-on-light p, .section-on-light li {
+            color: #4F4F4F; /* Slightly lighter text for paragraphs on light bg */
+        }
+        .section-on-light strong {
+            color: #333333; /* Darker strong text on light bg */
+        }
+
+
+        .section-title {
+            font-size: 2.25rem; /* Tailwind text-4xl */
+            font-weight: 700; /* bold */
+            margin-bottom: 2.5rem; /* mb-10 */
+            text-align: center;
+            color: var(--color-primary); /* Primary color for titles */
+        }
+
+        /* Card Styling (for Projects) */
+        .card {
+            background-color: #1a1a1a; /* Slightly lighter than main bg for depth */
+            border: 1px solid #2a2a2a; /* Subtle border */
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Softer shadow for dark theme */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            color: var(--color-text-focus);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(68, 119, 206, 0.2); /* Primary color shadow on hover */
+            border-color: var(--color-primary);
+        }
+        .card img {
+            border-bottom: 1px solid #2a2a2a;
+        }
+        .card h3 {
+            color: var(--color-primary);
+        }
+        .card a {
+            color: var(--color-primary);
+            font-weight: 500;
+        }
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Button Styling */
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem; /* py-3 px-6 */
+            border-radius: 0.5rem; /* rounded-lg */
+            font-weight: 600; /* semibold */
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: 1px solid transparent;
+        }
+        .btn-primary {
+            background-color: var(--color-primary);
+            color: var(--color-text); /* White text on primary button */
+        }
+        .btn-primary:hover {
+            background-color: #3366BB; /* Slightly darker primary */
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--color-text-focus);
+            border: 1px solid var(--color-text-behind);
+        }
+        .btn-secondary:hover {
+            background-color: var(--color-text-behind);
+            color: var(--background-color); /* Dark text on hover */
+            transform: translateY(-2px);
+        }
+
+        /* Text Styling from your CSS */
+        .text-title-h1 { /* Applied to section titles */
+            font-weight: bold;
+            font-size: 2.5rem; /* ~60px, responsive */
+            color: var(--color-primary);
+        }
+        .text-title-h2 {
+            font-size: 1.75rem; /* ~40px */
+            color: var(--color-text);
+        }
+        .text-title-h3 {
+            font-size: 1.25rem; /* ~20px */
+            color: var(--color-text-focus);
+        }
+        .text { /* Default text color already set on body */
+            color: var(--color-text);
+        }
+        .text-no-focus {
+            color: var(--color-text-behind);
+        }
+        .text-focus {
+            color: var(--color-text-focus);
+        }
+        .text-focus strong, strong.text-focus { /* Ensure strong tags also get the focus color */
+            color: var(--color-text-focus) !important; /* Important to override other strong rules if needed */
+        }
+
+        /* Certifications Section Specifics */
+        .certifications-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center items */
+            gap: 20px; /* Spacing between images */
+        }
+        .certification-item img {
+            max-width: 150px; /* Control max width of cert images */
+            height: auto;
+            border-radius: 0.375rem; /* rounded-md */
+            padding: 5px;
+        }
+        /* Responsive adjustments for certification images from your CSS */
+        @media screen and (max-width: 600px) {
+            .certification-item img {
+                max-width: 120px; /* Smaller on mobile */
+            }
+            .text-title-h1 { font-size: 2rem; }
+            .text-title-h2 { font-size: 1.5rem; }
+            .text-title-h3 { font-size: 1.1rem; }
+        }
+
+        /* Custom focus styles for accessibility */
+        *:focus-visible {
+            outline: 2px solid var(--color-primary);
+            outline-offset: 2px;
+        }
+        html { scroll-behavior: smooth; }
+        .prose { color: var(--color-text-focus); }
+        .prose p { line-height: 1.7; }
+        .prose a { color: var(--color-primary); }
+        .prose strong { color: var(--color-text-focus); }
+
+    </style>
 </head>
-<body onload="route()">
-    <header>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#" onclick="renderHome()">ABOUT</a></li>
-                <li><a href="#projects" onclick="renderProjects()">PROJECTS</a></li>
-                <li><a href="#projects" onclick="renderCertifications()">CERTIFICATIONS</a></li>
-                <li><a href="#projects" onclick="renderExperience()">EXPERIENCE</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main id="content"></main>
+<body class="antialiased">
+
+<header class="sticky top-0 z-50 py-3">
+    <nav class="content-container flex justify-between items-center">
+        <a href="#home" class="text-2xl font-bold" style="color: var(--color-primary);">Willian Bodnariuc</a> <div class="space-x-1 md:space-x-3">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+    </div>
+    </nav>
+</header>
+
+<section id="home" class="section-on-dark min-h-[80vh] flex items-center">
+    <div class="content-container text-center">
+        <img src="img/profile.jpg" alt="Willian Bodnariuc" class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-8 shadow-lg border-2" style="border-color: var(--color-primary);">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4" style="color: var(--color-text-focus);">Willian Bodnariuc</h1>
+        <p class="text-lg md:text-2xl mb-8 max-w-2xl mx-auto" style="color: var(--color-text-behind);">
+            Staff Software Engineer | Cloud, Security & Kubernetes
+        </p>
+        <div class="flex justify-center space-x-6 mt-4">
+            <a href="https://www.linkedin.com/in/willian-azevedo/" target="_blank" class="hover:opacity-75 transition-opacity" aria-label="LinkedIn Profile" style="color: var(--color-text-focus);">
+                <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/></svg>
+            </a>
+            <a href="https://github.com/willianmga" target="_blank" class="hover:opacity-75 transition-opacity" aria-label="GitHub Profile" style="color: var(--color-text-focus);">
+                <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.419 2.865 8.166 6.839 9.489.5.09.682-.218.682-.484 0-.238-.009-.868-.014-1.703-2.782.602-3.369-1.34-3.369-1.34-.455-1.156-1.11-1.465-1.11-1.465-.909-.62.069-.608.069-.608 1.004.071 1.532 1.03 1.532 1.03.891 1.529 2.341 1.089 2.91.833.091-.647.349-1.086.635-1.337-2.22-.252-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.682-.103-.254-.447-1.27.097-2.646 0 0 .84-.269 2.75 1.025A9.547 9.547 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.748-1.025 2.748-1.025.546 1.376.202 2.392.099 2.646.64.698 1.028 1.591 1.028 2.682 0 3.842-2.338 4.687-4.565 4.935.358.307.679.917.679 1.852 0 1.335-.012 2.415-.012 2.741 0 .269.18.579.688.481A10.005 10.005 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"/></svg>
+            </a>
+        </div>
+        <div class="space-x-4 mt-6">
+            <a href="#certifications" class="btn btn-primary">View My Certifications</a>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section-on-dark">
+    <div class="content-container">
+        <h2 class="section-title text-title-h1">About Me</h2>
+        <div class="max-w-3xl mx-auto prose prose-lg">
+            <p>
+                Hello! I'm Willian, a passionate and experienced Staff Software Engineer with a strong background in cloud technologies and security, Kubernetes, and backend game development. I thrive on solving complex challenges and building robust, scalable solutions.
+            </p><br/>
+            <p>
+                My journey in tech has led me through various roles, from developing engaging slot games backends to architecting and managing cloud infrastructure. I have experience building solutions in Java, TypeScript and Go, but always eager to learn and adapt to new technologies.
+            </p><br/>
+            <p>
+                Currently at Liferay, I lead the Cloud AppSec security team in securing our core platform services, and contribute to other fronts related to Cloud Security and Networking. Previously, I've contributed to exciting projects at Gamesys and Roxor Gaming.
+            </p>
+            <p class="mt-6 text-center">
+                <a href="https://www.linkedin.com/in/willian-azevedo/" target="_blank" class="btn btn-primary !bg-gray-700 hover:!bg-gray-600">View my LinkedIn</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="certifications" class="section-on-light">
+    <div class="content-container">
+        <h1 class="section-title text-title-h1">Certifications</h1>
+        <div class="certifications-grid">
+            <a href="https://www.credly.com/badges/b2969435-be2c-4588-93e3-9ef576554ba1/public_url" target="_blank" class="certification-item">
+                <img alt="Certified Kubernetes Administrator" src="img/certifications/cka.png">
+            </a>
+            <a href="https://www.credly.com/badges/b3a70483-a4a9-4b5e-af26-b9779fea5290/public_url" target="_blank" class="certification-item">
+                <img alt="Certified Kubernetes Application Developer" src="img/certifications/ckad.png">
+            </a>
+            <a href="https://www.credly.com/badges/e1d4efb9-65ad-45b8-ae70-bdfb47bb6a8c/public_url" target="_blank" class="certification-item">
+                <img alt="Google Cloud Architect" src="img/certifications/gcp-architect.png">
+            </a>
+            <a href="https://www.credly.com/badges/31556f53-c33d-4fce-8477-0e7e6d03b9ae/public_url" target="_blank" class="certification-item">
+                <img alt="Google Cloud Security Engineer" src="img/certifications/gcp-security-engineer.png">
+            </a>
+            <a href="https://www.credly.com/badges/b358b3f4-0663-488f-b50e-cc3fe6116472" target="_blank" class="certification-item">
+                <img alt="Oracle Certified Java Programmer 8" src="img/certifications/ocajp-8.png">
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section-on-dark">
+    <div class="content-container">
+        <h2 class="section-title text-title-h1">Projects</h2>
+        <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        </div>
+    </div>
+</section>
+
+<footer class="py-10 border-t" style="border-color: #2a2a2a;">
+    <div class="content-container text-center">
+        <p class="text-sm" style="color: var(--color-text-behind);">
+            &copy; <span id="currentYear"></span> Willian Bodnariuc. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+<script>
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+  const navLinks = document.querySelectorAll('header .nav-link, footer .nav-link');
+  const sections = document.querySelectorAll('section');
+
+  function changeNavActiveState() {
+    let currentSectionId = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+        currentSectionId = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + currentSectionId) {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', changeNavActiveState);
+  window.addEventListener('load', changeNavActiveState);
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+        // Manually set active class on click for immediate feedback
+        navLinks.forEach(link => link.classList.remove('active'));
+        // Find all links pointing to this targetId (header and footer)
+        document.querySelectorAll(`a.nav-link[href="${targetId}"]`).forEach(matchingLink => {
+          matchingLink.classList.add('active');
+        });
+      }
+    });
+  });
+
+  const gameProjects = [
+    { name: 'Wobbly Winnings', imageSlug: 'img/games/game-wobbly-winnings.jpg', infoLink: 'https://www.virgingames.com/category/slots?game-info=play-wobbly-winnings', demolink: 'https://www.virgingames.com/game/play-wobbly-winnings/demo' },
+    { name: 'Mermaid Megaways', imageSlug: 'img/games/game-mermaid-megaways.jpg', infoLink: 'https://www.virgingames.com/category/slots?game-info=play-bgs-mermaid-megaways', demolink: 'https://www.virgingames.com/game/play-bgs-mermaid-megaways/demo' },
+    { name: 'Barnyard Bonanza', imageSlug: 'img/games/game-barnyard-bonanza.jpg', infoLink: 'https://www.virgingames.com/category/slots?game-info=play-barnyard-bonanza', demolink: 'https://www.virgingames.com/game/play-barnyard-bonanza/demo' },
+    { name: 'Rockabillies', imageSlug: 'img/games/game-rockabillies.jpg', infoLink: 'https://www.virgingames.com/category/slots?game-info=play-bgs-rockabillies', demolink: 'https://www.virgingames.com/game/play-bgs-rockabillies/demo' },
+    { name: 'Blox Wild Zones', imageSlug: 'img/games/game-blox-wild-zones.jpg', infoLink: 'https://www.virgingames.com/category/slots?game-info=play-blox-wild-zones', demolink: 'https://www.virgingames.com/game/play-blox-wild-zones/demo' },
+    { name: 'Caribbean Stud Poker', imageSlug: 'img/games/game-caribbean-stud-poker.jpg', infoLink: 'https://www.virgingames.com/category/casino?game-info=play-caribbean-stud-poker', demolink: 'https://www.virgingames.com/game/play-caribbean-stud-poker/demo' },
+    { name: 'Lobstermania', imageSlug: 'img/games/game-lobstermania.jpg', infoLink: 'https://www.virgingames.com/category/slots?game-info=play-bgs-lobstermania', demolink: 'https://www.virgingames.com/game/play-bgs-lobstermania/demo' }
+  ];
+
+  const projectsGrid = document.getElementById('projects-grid');
+  gameProjects.forEach(project => {
+    const card = `
+                <div class="card">
+                    <img src="${project.imageSlug}" alt="${project.name}" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">${project.name}</h3>
+                        <div class="flex space-x-4 mt-4">
+                            ${project.infoLink ? `<a href="${project.infoLink}" target="_blank" class="hover:underline">Info</a>` : ''}
+                            ${project.demolink ? `<a href="${project.demolink}" target="_blank" class="hover:underline">Demo</a>` : ''}
+                        </div>
+                    </div>
+                </div>`;
+    projectsGrid.innerHTML += card;
+  });
+
+</script>
+
 </body>
 </html>

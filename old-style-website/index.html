@@ -1,0 +1,56 @@
+<html lang="en-US">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M85CSB3Z5N"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-M85CSB3Z5N');
+    </script>
+    <title>Willian Bodnariuc - Staff Software Engineer</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Willian Azevedo"/>
+    <meta name="keywords" content="Java, TypeScript, JavaScript, Kubernetes, ArgoCD, Jenkins, MongoDB, Redis, Apigee, Kong, Google Cloud"/>
+    <meta name="description" content="Willian is a Staff Software Engineer based in London, UK and specialized in APIs, Kubernetes and Cloud technologies"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Willian Azevedo - Staff Sofware Engineer"/>
+    <meta property="og:image" content="https://www.bodnariuc.com/img/profile.jpg"/>
+    <meta property="og:image:width" content="600"/>
+    <meta property="og:image:height" content="800"/>
+    <meta property="og:url" content="https://www.bodnariuc.com/"/>
+    <meta property="og:description" content="Willian is a Staff Software Engineer based in London, UK and specialized in APIs, Kubernetes and Cloud technologies"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="pages/projects/style.css">
+    <link rel="stylesheet" href="fonts/neuzeit-grotesk/stylesheet.css">
+    <script src="../router.js"></script>
+
+    <script src="pages/home/data.js"></script>
+    <script src="pages/home/intro.js"></script>
+    <script src="pages/home/index.js"></script>
+
+    <script src="pages/certifications/certifications.js"></script>
+    <script src="pages/certifications/index.js"></script>
+
+    <script src="pages/experience/experience.js"></script>
+    <script src="pages/experience/index.js"></script>
+
+    <script src="pages/projects/data.js"></script>
+    <script src="pages/projects/projects.js"></script>
+    <script src="pages/projects/index.js"></script>
+</head>
+<body onload="route()">
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" onclick="renderHome()">ABOUT</a></li>
+                <li><a href="#projects" onclick="renderProjects()">PROJECTS</a></li>
+                <li><a href="#projects" onclick="renderCertifications()">CERTIFICATIONS</a></li>
+                <li><a href="#projects" onclick="renderExperience()">EXPERIENCE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="content"></main>
+</body>
+</html>
