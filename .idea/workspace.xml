@@ -5,65 +5,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8efa3c94-6f92-47e1-82b9-232479360dd8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/old-style-website/img/certifications/cka.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-style-website/img/certifications/ckad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-style-website/img/certifications/gcp-architect.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-style-website/img/certifications/gcp-security-engineer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-style-website/img/certifications/ocajp-8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-style-website/img/games/game-barnyard-bonanza.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-style-website/img/games/game-blox-wild-zones.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-style-website/img/games/game-caribbean-stud-poker.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-style-website/img/games/game-lobster-mania.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-style-website/img/games/game-lobstermania.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-style-website/img/games/game-mermaid-megaways.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-style-website/img/games/game-rockabillies.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-style-website/img/games/game-wobbly-winnings.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-style-website/img/links/github.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-style-website/img/links/instagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-style-website/img/links/linkedin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-style-website/img/links/youtube.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-style-website/img/profile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-style-website/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/NeuzeitGro-Bla.eot" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Bla.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/NeuzeitGro-Bla.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Bla.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/NeuzeitGro-Bla.woff" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Bla.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/NeuzeitGro-Bla.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Bla.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/NeuzeitGro-Bol.eot" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Bol.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/NeuzeitGro-Bol.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Bol.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/NeuzeitGro-Bol.woff" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Bol.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/NeuzeitGro-Bol.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Bol.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/NeuzeitGro-Lig.eot" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Lig.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/NeuzeitGro-Lig.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Lig.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/NeuzeitGro-Lig.woff" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Lig.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/NeuzeitGro-Lig.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Lig.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/NeuzeitGro-Reg.eot" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Reg.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/NeuzeitGro-Reg.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Reg.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/NeuzeitGro-Reg.woff" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Reg.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/NeuzeitGro-Reg.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Reg.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/NeuzeitGroCon-Bla.eot" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGroCon-Bla.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/NeuzeitGroCon-Bla.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGroCon-Bla.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/NeuzeitGroCon-Bla.woff" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGroCon-Bla.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/NeuzeitGroCon-Bla.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGroCon-Bla.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/NeuzeitGroExt-Bla.eot" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGroExt-Bla.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/NeuzeitGroExt-Bla.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGroExt-Bla.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/NeuzeitGroExt-Bla.woff" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGroExt-Bla.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/NeuzeitGroExt-Bla.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGroExt-Bla.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/neuzeit-grotesk/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/certifications/sec-engineer.png" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/img/certifications/sec-engineer.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/certifications/certifications.js" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/pages/certifications/certifications.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/certifications/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/pages/certifications/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/experience/experience.js" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/pages/experience/experience.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/experience/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/pages/experience/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/pages/home/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/pages/home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home/intro.js" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/pages/home/intro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/projects/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/pages/projects/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/projects/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/pages/projects/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/projects/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/pages/projects/projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/projects/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/old-style-website/pages/projects/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Bla.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Bla.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Bla.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Bla.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Bol.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Bol.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Bol.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Bol.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Lig.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Lig.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Lig.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Lig.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Reg.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Reg.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Reg.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGro-Reg.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGroCon-Bla.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGroCon-Bla.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGroCon-Bla.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGroCon-Bla.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGroExt-Bla.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGroExt-Bla.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGroExt-Bla.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/NeuzeitGroExt-Bla.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/fonts/neuzeit-grotesk/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/img/certifications/cka.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/img/certifications/ckad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/img/certifications/gcp-architect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/img/certifications/gcp-security-engineer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/img/certifications/ocajp-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/img/certifications/sec-engineer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/img/games/game-barnyard-bonanza.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/img/games/game-blox-wild-zones.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/img/games/game-caribbean-stud-poker.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/img/games/game-lobster-mania.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/img/games/game-lobstermania.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/img/games/game-mermaid-megaways.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/img/games/game-rockabillies.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/img/games/game-wobbly-winnings.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/img/links/github.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/img/links/instagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/img/links/linkedin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/img/links/youtube.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/img/profile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/pages/certifications/certifications.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/pages/certifications/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/pages/experience/experience.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/pages/experience/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/pages/home/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/pages/home/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/pages/home/intro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/pages/projects/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/pages/projects/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/pages/projects/projects.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-style-website/pages/projects/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/router.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,7 +284,7 @@
       <workItem from="1520281245792" duration="28000" />
       <workItem from="1664406374952" duration="1739000" />
       <workItem from="1727972494067" duration="12141000" />
-      <workItem from="1747660905642" duration="4421000" />
+      <workItem from="1747660905642" duration="6324000" />
     </task>
     <servers />
   </component>
@@ -335,17 +336,6 @@
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
     <settings-migrated>true</settings-migrated>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/router.js</url>
-          <line>18</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
